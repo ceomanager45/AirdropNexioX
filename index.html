@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirdropNexioX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0b1020;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,0.45);
+      backdrop-filter:blur(12px);
+      z-index:1000;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#00d2ff;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:white;
+      margin-left:25px;
+      font-size:15px;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#00d2ff;
+    }
+
+    section{
+      padding:120px 8%;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:50px;
+      background:linear-gradient(135deg,#0b1020,#111935);
+    }
+
+    .hero-text{
+      max-width:650px;
+    }
+
+    .hero-text h1{
+      font-size:62px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero-text span{
+      color:#00d2ff;
+    }
+
+    .hero-text p{
+      color:#cfcfcf;
+      line-height:1.9;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 35px;
+      background:#00d2ff;
+      color:#000;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-5px);
+      box-shadow:0 0 25px #00d2ff;
+    }
+
+    .hero-image img{
+      width:100%;
+      max-width:500px;
+      animation:float 4s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%{transform:translateY(0)}
+      50%{transform:translateY(-20px)}
+      100%{transform:translateY(0)}
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:42px;
+      margin-bottom:20px;
+    }
+
+    .section-subtitle{
+      text-align:center;
+      color:#cfcfcf;
+      margin-bottom:60px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#151f3f;
+      padding:35px;
+      border-radius:20px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 30px rgba(0,210,255,0.18);
+    }
+
+    .card img{
+      width:80px;
+      margin-bottom:20px;
+    }
+
+    .roadmap-box{
+      background:#151f3f;
+      padding:30px;
+      border-radius:20px;
+      margin-bottom:20px;
+      border-left:4px solid #00d2ff;
+    }
+
+    .about-content,
+    .contact-box{
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+      line-height:1.9;
+      color:#cfcfcf;
+    }
+
+    footer{
+      padding:30px;
+      text-align:center;
+      background:#080d1a;
+      color:#aaa;
+    }
+
+    @media(max-width:900px){
+      .hero{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero-text h1{
+        font-size:42px;
+      }
+
+      nav{
+        display:none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AirdropNexioX</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#token">Token</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Next Generation <span>Crypto Platform</span></h1>
+
+    <p>
+      Professional crypto ecosystem for airdrops, community growth,
+      Web3 marketing, and blockchain innovation.
+    </p>
+
+    <a href="#token" class="btn">Explore Token</a>
+  </div>
+
+  <div class="hero-image">
+
+    <!-- HERO IMAGE BOSHABA EKHANE -->
+    <!-- src="YOUR_HERO_IMAGE_LINK" -->
+
+    <img src="https://i.postimg.cc/1zd8YTWs/1-1-1006782b.png" alt="AirdropNexioX">
+  </div>
+</section>
+
+<section id="token">
+  <h2 class="section-title">Our Token Features</h2>
+  <p class="section-subtitle">Modern Web3 ecosystem with premium crypto utilities.</p>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <!-- TOKEN IMAGE 1 -->
+      <!-- src="YOUR_TOKEN_IMAGE_1" -->
+
+      <img src="https://i.postimg.cc/5tBrPd9F/Whats-App-Image-2026-05-08-at-08-17-15.jpg" alt="Token">
+
+      <h3>Secure System</h3>
+      <p>Advanced blockchain protection and secure crypto infrastructure.</p>
+    </div>
+
+    <div class="card">
+
+      <!-- TOKEN IMAGE 2 -->
+      <!-- src="YOUR_TOKEN_IMAGE_2" -->
+
+      <img src="https://i.postimg.cc/jSrmyStb/1-e1d1325b.png" alt="Token">
+
+      <h3>Fast Transactions</h3>
+      <p>Ultra-fast and scalable token transaction system.</p>
+    </div>
+
+    <div class="card">
+
+      <!-- TOKEN IMAGE 3 -->
+      <!-- src="YOUR_TOKEN_IMAGE_3" -->
+
+      <img src="https://i.postimg.cc/QxS1J6r9/2-080b0579.png" alt="Token">
+
+      <h3>Community Driven</h3>
+      <p>Powered by active Web3 users and global crypto supporters.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="roadmap">
+  <h2 class="section-title">Project Roadmap</h2>
+  <p class="section-subtitle">Future vision and development phases.</p>
+
+  <div class="roadmap-box">
+    <h3>Phase 1</h3>
+    <p>Website launch, branding, and social media setup.</p>
+  </div>
+
+  <div class="roadmap-box">
+    <h3>Phase 2</h3>
+    <p>Community growth, marketing campaigns, and token awareness.</p>
+  </div>
+
+  <div class="roadmap-box">
+    <h3>Phase 3</h3>
+    <p>Exchange listings, partnerships, and ecosystem expansion.</p>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About AirdropNexioX</h2>
+
+  <div class="about-content">
+    AirdropNexioX is a futuristic crypto ecosystem focused on community growth,
+    blockchain innovation, token marketing, and Web3 digital expansion.
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+
+  <div class="contact-box">
+    Email: support@airdropnexiox.com
+    <br><br>
+    Telegram: @AirdropNexioX
+    <br><br>
+    Twitter/X: @AirdropNexioX
+  </div>
+</section>
+
+<footer>
+  © 2026 AirdropNexioX — All Rights Reserved.
+</footer>
+
+</body>
+</html>
